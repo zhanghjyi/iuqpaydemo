@@ -17,7 +17,7 @@ import java.util.Map;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UqPayDemoApplicationTests {
+public class UqPayPayTests {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Test

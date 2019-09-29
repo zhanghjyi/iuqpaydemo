@@ -1,5 +1,6 @@
 package com.uqpay.demo.uqpaydemo.util;
 
+import com.alibaba.fastjson.JSON;
 import com.uqpay.demo.uqpaydemo.config.OkHttp3Config;
 import okhttp3.*;
 import org.apache.commons.lang.StringUtils;
@@ -90,6 +91,8 @@ public class OkHttpUtil {
      * @return
      */
     public static String postFormParams(String url, Map<String, Object> params) {
+        logger.info("------>请求URL：" + url);
+        logger.info("------>请求参数：" + JSON.toJSONString(params));
         FormBody.Builder builder = new FormBody.Builder();
         //添加参数
         if (params != null && params.keySet().size() > 0) {

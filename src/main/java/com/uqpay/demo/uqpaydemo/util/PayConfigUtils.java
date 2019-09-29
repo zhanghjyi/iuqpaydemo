@@ -30,10 +30,17 @@ public class PayConfigUtils {
         return (String) properties.get(key);
     }
 
+    public static String PLATE_NO = readConfig("PLATE_NO");
+    public static String MERCHANT_ID = readConfig("MERCHANT_ID");
+    public static String SUB_USER_NO = readConfig("SUB_USER_NO");
     public static String PAY_URL = readConfig("PAY_URL");
+    public static String WITHDRAW_URL = readConfig("WITHDRAW_URL");
+    public static String MERCHANT_IMP_URL = readConfig("MERCHANT_IMP_URL");
+    public static String MERCHANT_QUERY_DETAIL_URL = readConfig("MERCHANT_QUERY_DETAIL_URL");
     public static String ORDER_PERIOD = readConfig("orderPeriod");
     public static String PAY_KEY = readConfig("payKey");
     public static String PAY_SECRET = readConfig("paySecret");
     public static String PAY_NOTIFY_URL = readConfig("notifyUrl");
+    public static String WITHDRAW_NOTIFY_URL = readConfig("notifyWithdrawUrl");
     public static String PAY_VIEW_URL = readConfig("returnUrl");
 }

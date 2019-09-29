@@ -6,6 +6,7 @@ package com.uqpay.demo.uqpaydemo.config;
  */
 public enum TradeTypeEnum {
     PAY("pay", "付款"),
+    SUB_MERCHANT_IMP("sub_merchant_imp", "商户入驻"),
     WITHDRAW("withdraw", "提现");
 
     public static TradeTypeEnum getEnum(String name) {

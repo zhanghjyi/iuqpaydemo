@@ -36,7 +36,7 @@ public class UnionPayDto implements java.io.Serializable {
 
     /**
      * 商户id（账单详情页显示商户信息）
-     * <p>
+     *
      * 入驻以后返回的商户ID
      */
     private String merchantId = "1005481";
