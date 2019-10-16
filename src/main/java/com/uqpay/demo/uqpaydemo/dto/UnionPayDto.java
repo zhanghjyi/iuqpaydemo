@@ -61,7 +61,7 @@ public class UnionPayDto implements java.io.Serializable {
     /**
      * 订单币种
      */
-    private CurrencyEnum currency;
+    private CurrencyEnum currency = CurrencyEnum.USD;
     /**
      * 商户支付key
      */
@@ -588,5 +588,13 @@ public class UnionPayDto implements java.io.Serializable {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
+    }
+
+    public String getPlateNo() {
+        return plateNo;
+    }
+
+    public CurrencyEnum getCurrency() {
+        return currency;
     }
 }
