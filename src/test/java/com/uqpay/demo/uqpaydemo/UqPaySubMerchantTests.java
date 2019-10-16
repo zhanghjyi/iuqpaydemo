@@ -99,9 +99,11 @@ public class UqPaySubMerchantTests {
     private Map<String, Object> createSubMerchant() {
         String requestNo = String.valueOf(System.currentTimeMillis());
         logger.info("请求流水:" + requestNo);
-        SubMerchant dto = new SubMerchant(PayConfigUtils.PAY_KEY, requestNo, "88882019090510001115", "网易云音乐", "音乐", "wyyyy@163.com", "北京网易云音乐",
+        //Enums.random(MccTypeEnum.class).getCode()
+        SubMerchant dto = new SubMerchant(PayConfigUtils.PAY_KEY, requestNo, PayConfigUtils.PLATE_NO,
+                "tomato foodnet co.,ltd", "tomato foodnet", "wyyyy@163.com", "tomato foodnet co.,ltd",
                 "91310112757554814X", "北京中关村", "CN",
-                Enums.random(MccTypeEnum.class).getCode(), "music.163.com",
+                "4816", "music.163.com",
                 "zhangyi", "15652282111", "test@163.com");
         Map<String, Object> map = dto.createMerchantRequest();
         //签名及生成请求API的方法

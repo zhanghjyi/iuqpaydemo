@@ -34,6 +34,8 @@ public class UnionPayDto implements java.io.Serializable {
      */
     private String payType = "UNIONPAY_EXPRESSPAY";
 
+    private String plateNo = PayConfigUtils.PLATE_NO;
+
     /**
      * 商户id（账单详情页显示商户信息）
      *
@@ -170,6 +172,7 @@ public class UnionPayDto implements java.io.Serializable {
                 paramMap.put("tradeType", this.tradeType.name());
                 paramMap.put("payWay", this.payWay);
                 paramMap.put("payType", this.payType);
+                paramMap.put("plateNo", this.plateNo);
                 paramMap.put("merchantId", this.merchantId);
                 paramMap.put("merchantName", this.merchantName);
                 paramMap.put("orderNo", this.orderNo);

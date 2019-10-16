@@ -44,8 +44,8 @@ public class UqPayPayTests {
     private Map<String, Object> createPay() {
         String orderNo = String.valueOf(System.currentTimeMillis());
         logger.info("订单编号:" + orderNo);
-        String amount = "32.5";
-        String fee = "5.5";
+        String amount = "0.1";
+        String fee = "0.01";
         String transName = "黄焖鸡米饭";
         String remark = "今天中午午饭";
         UnionPayDto dto = new UnionPayDto(TradeTypeEnum.PAY, orderNo, amount, fee, transName, 1001, 1010, 1210,

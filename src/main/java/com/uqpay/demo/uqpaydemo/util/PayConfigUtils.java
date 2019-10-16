@@ -40,7 +40,7 @@ public class PayConfigUtils {
     public static String ORDER_PERIOD = readConfig("orderPeriod");
     public static String PAY_KEY = readConfig("payKey");
     public static String PAY_SECRET = readConfig("paySecret");
-    public static String PAY_NOTIFY_URL = readConfig("notifyUrl");
+    public static String PAY_NOTIFY_URL = readConfig("notifyPayUrl");
     public static String WITHDRAW_NOTIFY_URL = readConfig("notifyWithdrawUrl");
     public static String PAY_VIEW_URL = readConfig("returnUrl");
 }
